@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@100&display=swap');
+
+:root {
+    --color1: orange;
+    --color2: purple;
+    --color3: rgb(0, 191, 216);
+}
+
+body {
+    flex-wrap: wrap;
+    background-color: rgb(44, 0, 44);
+    justify-content: flex-start;
+}
+
+header {
+    /* display: flex; */
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(./Photos/pexels-john-petalcurin-2115257.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1vw 1vw;
+    font-size: 2rem;
+    color: var(--color1);
+}
+
+span {
+    color: var(--color2)
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    border-bottom: 2rem;
+}
+
+header img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid var(--color2)
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-left: 450px;
+    float: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+li a:hover {
+    text-shadow: 2px 2px 10px #dfb600;
+    filter: dropshadow(color=#ff9900, offx=2, offy=2);
+}
+
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header:hover {
+    transition: .4s;
+    color: var(--color1);
+}
+
+#resume a:hover {
+    transition: .4s;
+    color: var(--color3);
+}
+
+#previousWork a:hover {
+    transition: .33s ease-in-out;
+    color: var(--color3);
+}
+
+.previousWork:hover {
+    color: var(--color3);
+}
+
+a {
+    color: var(--color2);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#aboutMe {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    background-image: url(./Photos/pexels-andy-vu-3244513.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--color2);
+    margin: 5rem;
+    padding: 9rem;
+    border-radius: 15px;
+    border: solid var(--color3);
+    flex: 0 0 20%;
+}
+
+#aboutMe p:hover {
+    transition: .4s ease-in-out;
+    color: var(--color3);
+}
+
+.previousWork {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    position: relative;
+    font-size: xx-large;
+    background-image: url(./Photos/pexels-pixabay-39561.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--color1);
+    margin: 5rem;
+    padding: 10rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+}
+
+.workDaySched {
+    padding: 3rem;
+    margin-top: 5rem;
+    text-align: left;
+    /* flex-direction: column; */
+}
+
+.weatherApp {
+    padding: -8rem;
+    text-align: right;
+    /* flex-direction: column; */
+}
+
+.previousWork h2 {
+    text-align: center;
+    margin: top;
+    padding: 0rem;
+}
+
+.previousWork ul {
+    text-align: left;
+}
+
+#contactMe {
+    flex-wrap: wrap;
+    position: relative;
+    background-image: url(./Photos/pexels-виктор-куликов-8601965.jpg);
+    background-size: cover;
+    color: var(--color2);
+    font-size: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+
+}
+
+#contactMe a:hover {
+    transition: .4s ease-in-out;
+    color: var(--color3);
+}
+
+#resume {
+    flex-wrap: wrap;
+    position: relative;
+    background-image: url(./Photos/pexels-alex-andrews-816608.jpg);
+    background-size: cover;
+    color: var(--color2);
+    font-size: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+}
+
+#contactMe:hover {
+    transition: .3s;
+    color: var(--color1);
+}
+
+div h1:hover {
+    background-color: cyan;
+}
+
+h2:hover {
+    transition: .3s;
+    color: var(--color1);
+}
+
+footer {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: var(--color1)
+}
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 450px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
